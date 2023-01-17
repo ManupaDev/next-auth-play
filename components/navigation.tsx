@@ -16,10 +16,10 @@ function Navigation() {
 
   if (user) {
     return (
-        <div className="px-8 flex border justify-between border-white py-2 items-center">
+        <div className="px-8 flex border justify-between border-black py-2 items-center">
           <h1 className="font-semibold te">Next Authentication</h1>
           <div className="flex">
-            <button className="border rounded-md mx-2 py-1 cursor-pointer  border-white px-4" onClick={async ()=>{
+            <button className="border rounded-md mx-2 py-1 cursor-pointer  border-black px-4" onClick={async ()=>{
                 await signOutUser();
                 window.location.reload();  
             }}>
@@ -31,13 +31,13 @@ function Navigation() {
   }
 
   return (
-    <div className="px-8 flex border justify-between border-white py-2 items-center">
+    <div className="px-8 flex border justify-between border-black py-2 items-center">
       <h1 className="font-semibold te">Next Authentication</h1>
       <div className="flex">
-        <Link className="border rounded-md mx-2 py-1 cursor-pointer  border-white px-4" href="/signup">
+        <Link className="border rounded-md mx-2 py-1 cursor-pointer  border-black px-4" href="/signup">
           Sign Up
         </Link>
-        <Link className="border rounded-md mx-2 py-1 cursor-pointer  border-white px-4" href="/signin">
+        <Link className="border rounded-md mx-2 py-1 cursor-pointer  border-black px-4" href="/signin">
           Sign In
         </Link>
       </div>
