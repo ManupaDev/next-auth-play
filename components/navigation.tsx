@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { getCurrentUser, signOutUser } from "./../firebase/auth";
@@ -21,7 +22,7 @@ function Navigation() {
           <div className="flex">
             <button className="border rounded-md mx-2 py-1 cursor-pointer  border-black px-4" onClick={async ()=>{
                 await signOutUser();
-                window.location.reload();  
+                window.location.reload(); 
             }}>
               Sign Out
             </button>
